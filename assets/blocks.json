@@ -1,0 +1,52 @@
+{
+  "blocks": [
+    {
+      "id": 1,
+      "name": "cobblestone",
+      "states": [
+        {
+          "name": "default",
+          "textures": {
+            "all": "cobblestone.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "water",
+      "states": [
+        {
+          "name": "default",
+          "textures": {
+            "all": "water.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "hi",
+      "states": [
+        {
+          "name": "default",
+          "textures": {
+            "all": "hi.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "cat",
+      "states": [
+        {
+          "name": "default",
+          "textures": {
+            "all": "cat.png"
+          }
+        }
+      ]
+    }
+  ]
+}

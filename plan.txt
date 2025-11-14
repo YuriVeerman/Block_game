@@ -1,0 +1,31 @@
+Goal:
+Make a very optimised minecraft clone
+
+subgoals;
+- make a window where blocks can be displayed --- DONE
+    - make a window --- DONE
+    - place a block --- DONE
+    - move around with wasd, shift and space --- DONE
+    - make a block library.
+        - make a textures folder with textures in it. --- DONE
+        - read in all of the textures into a texture library array. --- DONE
+        - make get functions for all items in the texture array! --- DONE
+        - make a blocks.json file where every block and its information is stored
+        - make a .c file that creates a massive block array for every block using the block.json and the texture library
+    - make a function that can display a block from the library
+
+
+
+    Yes, that approach is simpler and more efficient!
+
+How it works:
+
+When you load all textures, create OpenGL textures and store their gl_id in your texture_lib.
+In your block or state struct, instead of storing a full texture, just store the index (or pointer) to the texture in the texture_lib.
+When drawing, use the index to get the correct gl_id from the texture library and bind it.
+Benefits:
+
+Memory efficiency: Only one copy of each texture in memory.
+Fast lookup: You just use an index or pointer.
+Easy management: Texture loading and OpenGL setup are centralized.
+Example:
