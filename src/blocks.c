@@ -28,23 +28,6 @@ void block_init_state(struct texture_lib *texture_lib, cJSON *state_json, struct
     for (int i = 0; i < TEXTURES_PER_BLOCK; i++) {
         // get texture from index
         int texture_index = texture_get_index_by_name(texture_lib, texture_name);
-
-        // input all values
-        // int channels = texture_get_channels(texture_lib, texture_index);
-        // int size = texture_get_size(texture_lib, texture_index);
-
-        // state->textures[i].channels = channels;
-        // state->textures[i].size = size;
-        // memcpy(state->textures[i].name, texture_get_name(texture_lib, texture_index), MAX_BLOCK_NAME_SIZE);
-        // state->textures[i].pixels = malloc(size * size * channels);
-        // if (state->textures[i].pixels == NULL) {
-        //     printf("Failed to allocate memory for texture pixels\n");
-        //     // Handle error (e.g., return or continue)
-        // }
-        // unsigned char *pixels = texture_get_pixels(texture_lib, texture_index);
-        // memcpy(state->textures[i].pixels, pixels, size * size * channels);
-        // printf("state->textures[i].channels = %d, .size = %d, .name = %s\n", state->textures[i].channels, size, state->textures[i].name);
-
         state->gl_id[i] = texture_get_gl_id(texture_lib, texture_index);
     }
 
@@ -145,7 +128,6 @@ struct block_lib *blocks_init(void) {
     textures_release(texture_lib);
     return block_lib;
 }
-
 
 
 int blocks_get_index_by_name(struct block_lib *block_lib, const char *name) {

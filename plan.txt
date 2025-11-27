@@ -29,3 +29,12 @@ Memory efficiency: Only one copy of each texture in memory.
 Fast lookup: You just use an index or pointer.
 Easy management: Texture loading and OpenGL setup are centralized.
 Example:
+
+
+Make a world saving and loading system
+- make a main menu where you can chose to load a world
+- make a data structure.
+    - where you can update block data into
+    - where you can read info from
+    - where for every frame there is a list of changes since last frame for the updates that have to be rendered.
+

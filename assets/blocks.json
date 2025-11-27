@@ -47,6 +47,18 @@
           }
         }
       ]
+    },
+    {
+      "id": 5,
+      "name": "steven",
+      "states": [
+        {
+          "name": "default",
+          "textures": {
+            "all": "steven.png"
+          }
+        }
+      ]
     }
   ]
 }

@@ -1,5 +1,5 @@
 CFLAGS = -Wall -Wpedantic
-LDFLAGS = -lglfw -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo
+LDFLAGS = -lglfw -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo -framework GLUT
 
 
 # Make commands
